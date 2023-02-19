@@ -1,0 +1,17 @@
+:root {
+	--primary-color: #242565;
+	--background-color: #F5F5F5;
+	--secondary-color: #F2F4FF;
+	
+	--padding: 1rem;
+
+	--border-radius: 1rem;
+	--border-size: 2px;
+	
+	--font-size-large: 1.5rem;
+	--font-size-regular: 1rem;
+	--font-size-small: 0.75rem;
+
+	--logo-font: 'DM Mono', monospace;
+	
+}
