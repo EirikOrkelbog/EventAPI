@@ -1,0 +1,50 @@
+select {
+	background-color: var(--primary-color);
+	border: none;
+	color: var(--secondary-color);
+}
+
+.header_image {
+	position: relative;
+	height: 80vh;
+	background-image: url(/_app/assets/images/header.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 2rem 0 0 6rem;
+}
+
+.header_logo {
+	font-size: var(--large);
+	font-family: var(--logo-font);
+	background-color: transparent;
+	color: var(--secondary-color);
+	border: none;
+}
+
+.header_search-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 60%;
+	height: 6rem;
+	padding: var(--padding);
+	border-radius: var(--border-radius);
+	background-color: var(--primary-color);
+}
+
+.search-box {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	border-bottom: 1px solid white;
+}
+
+.search-box_name {
+	font-size: var(--small);
+	margin-bottom: .5rem;
+}
