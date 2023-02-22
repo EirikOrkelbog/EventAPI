@@ -2,6 +2,7 @@
 	--primary-color: #242565;
 	--background-color: #F5F5F5;
 	--secondary-color: #F2F4FF;
+	--dark-text: #000000;
 	
 	--padding: 1rem;
 
@@ -11,6 +12,9 @@
 	--large: 1.5rem;
 	--regular: 1rem;
 	--small: 0.75rem;
+
+	--regular: 300;
+	--bold: 700;
 
 	--logo-font: 'DM Mono', monospace;
 	
