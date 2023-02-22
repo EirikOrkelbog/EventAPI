@@ -11,31 +11,41 @@
 	<body>
 		<header>
 			<section class="header_image">
-				<button href="/" class="header_logo">EventAPI</button>
+				<a href="" class="header_logo">EventAPI</a>
 
-				<div class="header_search-box">
+				<div class="header_search-container">
 					<div class="search-box">
 						<label for="search-event" class="search-box_name">Search Event</label>
 
-						<select name="search-event" id="search-event" class="search-box_content">
-							<option value=""></option>
-						</select>
+						<input type="text" class="search-box_content" id="search-event">
+
+						<div class="search_list">
+							<div class="search_list-item">
+								<div class="search_item-thumbnail">
+									<img src="/_app/assets/images/header.jpg" alt="">
+								</div>
+
+								<div class="search_item-info">
+									<h4>Event of the month</h4>
+									<p>21.04.2023</p>
+								</div>
+
+							</div>
+							
+							<div class="search_line-divider"></div>
+						</div>
 					</div>
 
 					<div class="search-box">
 						<label for="place" class="search-box_name">Place</label>
 
-						<select name="place" id="place" class="search-box_content">
-							<option value=""></option>
-						</select>
+						<input type="text" class="search-box_content" id="place">
 					</div>
 
 					<div class="search-box">
 						<label for="time" class="search-box_name">Time</label>
 
-						<select name="time" id="time" class="search-box_content">
-							<option value=""></option>
-						</select>
+						<input type="text" class="search-box_content" id="time">
 					</div>
 				</div>
 			</section>
