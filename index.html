@@ -1,98 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>EventAPI</title>
-		<link rel="stylesheet" href="/_app/css/main.css">
-		<script type="module" src="/_app/js/main.js"></script>
-	</head>
 
-	<body>
-		<header>
-			<section class="header_image">
-				<a href="" class="header_logo">EventAPI</a>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EventAPI</title>
+	<link rel="stylesheet" href="/_app/css/main.css">
+	<script type="module" src="/_app/js/main.js"></script>
+</head>
 
-				<div class="header_search-container">
-					<div class="search-box">
-						<label for="search-event" class="search-box_name">Search Event</label>
+<body>
+	<header>
+		<section class="heading">
+			<h1>Event<span>Search</span></h1>
+		</section>
 
-						<input type="text" class="search-box_content" id="search-event">
+		<section class="search_section">
+			<div class="search_container">
+				<input type="search" class="search" placeholder="Search for event..." id="search">
 
-						<div class="search_list">
-							<div class="search_list-item">
-								<div class="search_item-thumbnail">
-									<img src="/_app/assets/images/header.jpg" alt="">
-								</div>
+				<div class="search_list search_list-hide" id="search_list"></div>
+			</div>
+		</section>
+	</header>
 
-								<div class="search_item-info">
-									<h4>Event of the month</h4>
-									<p>21.04.2023</p>
-								</div>
+	<main class="main">
+		<h2>Upcoming Events</h2>
+		<section class="main_cards"></section>
 
-							</div>
-							
-							<div class="search_line-divider"></div>
-						</div>
-					</div>
+		<section class="main_details hide_details">
+			<button class="main_details-close">X</button>
+		</section>
+	</main>
+</body>
 
-					<div class="search-box">
-						<label for="place" class="search-box_name">Place</label>
-
-						<input type="text" class="search-box_content" id="place">
-					</div>
-
-					<div class="search-box">
-						<label for="time" class="search-box_name">Time</label>
-
-						<input type="text" class="search-box_content" id="time">
-					</div>
-				</div>
-			</section>
-		</header>
-
-		<main>
-			<section class="main_navigation">
-				<h2 class="main_navigation-h2">Upcoming Events</h2>
-
-				<div class="main_navigation-container">
-					<select name="day" id="day" class="main_navigation-content">
-						<option value=""></option>
-					</select>
-
-					<select name="type" id="type" class="main_navigation-content">
-						<option value=""></option>
-					</select>
-
-					<select name="category" id="category" class="main_navigation-content">
-						<option value=""></option>
-					</select>
-				</div>
-			</section>
-
-			<section class="main_cards">
-				<div class="card">
-					<div class="card_image">
-						<img src="/_app/assets/images/header.jpg" alt="">
-					</div>
-
-					<div class="card_info">
-						<div class="card_info-date">
-							<p class="date-month">APR</p>
-							<p class="date-number">14</p>
-						</div>
-
-						<div class="card_info-text">
-							<h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dolores officia quos facilis laboriosam dolor libero eius, natus odio, illum accusantium quo sit assumenda consequuntur ipsam! Amet aspernatur fugiat vitae?</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio harum explicabo nisi reiciendis culpa ex minus, itaque id officia tenetur ratione vero aut recusandae odio repellendus suscipit molestiae asperiores architecto.</p>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-
-		<footer>
-
-		</footer>
-	</body>
 </html>

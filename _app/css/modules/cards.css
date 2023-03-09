@@ -1,50 +1,79 @@
+.main h2 {
+	font-size: 2rem;
+	text-align: center;
+}
+
 .main_cards {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-template-rows: auto;
-	padding: 3rem 6rem;
-	gap: 1rem;
+	padding: 3rem;
+	gap: 2rem;
 }
 
 .card {
-	background-color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
 	width: 100%;
-	border-radius: var(--border-radius);
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.card:hover {
+	scale: 1.05;
 }
 
 .card_image img {
 	width: 100%;
 	border-radius: 1rem 1rem 0 0;
+	aspect-ratio: 1.2;
 }
 
 .card_info {
 	display: flex;
-	gap: 1rem;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow: 1;
+	gap: .5rem;
 	padding: var(--padding);
-	color: var(--dark-text);
+	background-color: var(--secondary-color);
+	border-radius: 0 0 1rem 1rem;
 }
 
 .card_info-date {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.card_info-text h4 {
-	margin-bottom: 1rem;
-}
-
-.card_info-text p {
 	font-size: var(--small);
-}
-
-.date-month {
-	font-size: var(--small);
-	color: var(--primary-color);
+	color: #000;
 	font-weight: var(--bold);
 }
 
-.date-number {
-	font-size: var(--large);
-	font-weight: var(--bold);
+.card_info-name {
+	color: #000;
+	font-size: 1rem;
+}
+
+
+@media screen and (min-width: 600px) {
+	.main_cards {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.main_cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.main_cards {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.card_info-name {
+		font-size: 1.5rem;
+	}
+
+	.card_info-details {
+		font-size: var(--regular);
+	}
 }
